@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="c1221a18-1594-427f-9907-c418ec163a29" name="ClassePedido" linkedPackageId="a6b1878f-a1a3-4a51-b198-4595683f78fa" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="6490678d-8f09-40b1-92f1-8d9a277d4c48" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="ffb1100f-cd00-4620-b5fc-caf2f69fdd54" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="74e12311-0724-4585-9e62-326d1a7b79c3">
+          <propertyInstance Id="311a5b35-aa29-4a80-94b6-49f52fc8c7ce" name="BaseName">
+            <elementDefinition Id="0891696f-2ba4-4f87-b881-c666ecdc78a6" />
+          </propertyInstance>
+          <elementDefinition Id="446dae48-75e8-42ac-87b1-973d7ea66289" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="94bce9fb-6f0d-4fc9-a3a6-36dc6acde084">
+          <propertyInstance Id="828a2cbf-0a1b-424d-81bb-ed012ebc55be" name="ClrAttributes">
+            <elementDefinition Id="427f72a4-11d9-4835-a7be-5cd918abb30c" />
+          </propertyInstance>
+          <elementDefinition Id="1c6d3e0d-6efb-48f6-9ccc-333037e8cdda" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="39c00305-c4b5-41a6-811f-021e87f6de46">
+          <propertyInstance Id="129251bf-44b5-4735-8b67-8eb1a5148a93" name="Usings">
+            <elementDefinition Id="80f5736b-fbbf-42c8-bd2a-4e84603dca4e" />
+          </propertyInstance>
+          <elementDefinition Id="7e09b07d-3926-4e21-89f4-f7ff82df42a9" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="1f4b65f0-233b-4839-9609-f7dd09837d76" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="004635dd-3310-42e7-80a1-877afbd5cb17" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d913d81a-8484-4e6d-8407-33c258e44820">
+          <propertyInstance Id="f89bd7fb-02f7-4ff0-9370-b5651235256e" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="afd5d3dc-57e2-4ec2-bc73-b1f745da25e3" />
+          </propertyInstance>
+          <elementDefinition Id="ba826c86-ae76-404a-8b05-e7912fbd1d5d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e6c9dc55-61ab-4c88-b115-3a0efa2fe82c">
+          <propertyInstance Id="532a4952-4acc-4ff8-bac7-a3c9c3379a56" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="8c7b2fb0-1696-4977-9a7b-d3b266fc3354" />
+          </propertyInstance>
+          <elementDefinition Id="99c22881-db39-411a-a4b0-c752dce100b0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="bb2119b3-2140-43ab-b622-97981e336bc6">
+          <propertyInstance Id="583e64c4-6031-4aa7-a560-3217c7bbb2d1" name="ProjectPath" value="ClassTemplate=..\ModelagemLib\ModelagemLib.csproj|EnumTemplate=..\ModelagemLib\ModelagemLib.csproj|InterfaceTemplate=..\ModelagemLib\ModelagemLib.csproj|StructTemplate=..\ModelagemLib\ModelagemLib.csproj">
+            <elementDefinition Id="44262b7d-55d4-487b-adf0-e1945456e9a5" />
+          </propertyInstance>
+          <elementDefinition Id="30b87935-18e4-411b-ac03-7d7740db5ba8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ac0076cc-6238-405b-9b13-2d0aa9b3e6c6">
+          <propertyInstance Id="71544c29-5c06-4f41-b9fa-e54ff1d69965" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="09e2ab24-829d-4980-bad1-94cfb643e6af" />
+          </propertyInstance>
+          <elementDefinition Id="baa4a146-11f1-4fbd-8466-aacb6498e349" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c9ee2a17-fda2-4df4-82a1-bd436bc84c5f">
+          <propertyInstance Id="3381ac67-73aa-4a4f-9476-958b5ac8b8f8" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="1f5a2fed-b147-438a-9b6a-390554fbf991" />
+          </propertyInstance>
+          <elementDefinition Id="9def7797-0672-407f-b15a-9c883c004c78" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a19f46ea-d648-4202-83f1-57b0cdb75be7">
+          <propertyInstance Id="7f0bcdb8-fd53-4938-a48e-bdfc45f493e8" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="37de9e25-49df-492e-a981-a686199bd000" />
+          </propertyInstance>
+          <elementDefinition Id="446da19d-f6cb-4e3a-bceb-a51a3c535a10" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5679c256-aba6-4574-a6fb-3619a5be3f5d">
+          <propertyInstance Id="4327eb31-b3f8-427a-a366-73872e94e156" name="Parameters">
+            <elementDefinition Id="874489f9-c2fd-43b3-baba-e02562441ef4" />
+          </propertyInstance>
+          <elementDefinition Id="6643b498-6152-4862-a396-d81ddb066ff9" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b0a0ddc5-31aa-4f09-86fb-4aa6fa29677d" name="Empresa" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="04ace862-e847-405b-b8c4-fdd5fd8e0594" />
+        <targetEnds>
+          <association Id="ea305183-0109-4880-85e9-f2afbda0ee17" isDerived="false" sourceEndRoleName="Empresa" targetEndRoleName="Fornecedor" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="725e5e81-2a03-4721-bdde-def432d63a76" LastKnownName="IFornecedor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93bad265-8c1b-4a1f-a1d6-f728a709cf1a" name="Empresa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9e07b549-4571-4088-bf20-70140d726e33" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="020c05a4-1802-4698-8a40-c9376d9a2f08" name="Fornecedor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="253f5ac0-0e86-4f59-bb21-22f81795cdb9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f494a2a-6271-4d19-9556-a9ada67e72f2" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="2e2b9836-e8e1-4457-b198-e4f10da579af" name="Nome" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9316f48a-7f24-4be3-97db-543f270c290f" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8b33ee97-49f1-451d-aa9a-30df1dada9a1" name="EnviarPedidoFornecedor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c5f31047-6f4e-49a7-9759-9ae55a9aeb7a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f19def0f-9bad-49b9-8015-a5b5e36e5bc7" name="pedido" direction="In" isUnique="false">
+                  <elementDefinition Id="d68935c3-e898-445f-8ff4-940157b6e2d8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d3c81d4d-aa80-456b-a135-c8156e46cc2e" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e1cc2e22-c27c-48a4-946a-7f6fed169ce7" name="LigarParaFornecedor" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dcd3e081-3517-4931-bf99-af7495ec2a61" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9b5cfedf-36bf-4edc-bb55-1bdea6f9c982" name="fornecedor" direction="In" isUnique="false">
+                  <elementDefinition Id="3de509fd-00d3-46a3-b403-8238e3f7230c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="426d3b7e-e64a-4528-9786-1370d7e39e21" LastKnownName="IFornecedor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a1348ad9-f70e-4ed6-9457-1a95729b8771" name="Empresa" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c212b895-bf20-46d9-80d2-e456766ab666" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="31516cb3-2c6b-4c92-823f-0d7ffb07ed0e" name="SmartphoneLoja" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0f706548-4ba4-4b2e-b8d2-16663a5ae744" />
+        <generalsInternal>
+          <generalization Id="82169f00-16b3-46d6-9705-1440aa77ff62" isSubstitutable="false">
+            <classMoniker Id="b0a0ddc5-31aa-4f09-86fb-4aa6fa29677d" LastKnownName="Empresa" />
+            <elementDefinition Id="3b6f4b7b-76e9-4e29-a4d3-952f494d015d" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="4f46604d-a4a0-4eb6-80a2-e825ca490535" name="SmartphoneLoja" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1e11846f-9cc8-4d21-8300-b9eb91e8abb9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7c6b9989-5ae7-44ea-87a6-93acdecb041e" name="fornecedor" direction="In" isUnique="false">
+                  <elementDefinition Id="9f9a653a-a570-4465-8891-9d1abf7a8d1c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="426d3b7e-e64a-4528-9786-1370d7e39e21" LastKnownName="IFornecedor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c2ed2854-2a89-443f-a6b4-537e2806b658" name="SmartphoneLoja" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5aa64256-15a2-4bfc-9b1e-ff0bfdfeb1b4" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="725e5e81-2a03-4721-bdde-def432d63a76" name="IFornecedor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ed1ad7d3-0db3-4f6a-9587-b61e2a63c530" />
+        <targetEnds>
+          <association Id="3b5042e5-6d55-40d1-8164-57b31bb11daf" isDerived="false" sourceEndRoleName="IFornecedor" targetEndRoleName="Transportadora" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="3dd505e9-9324-44fe-ba8b-80252a08e9e5" LastKnownName="ITransportadora" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="947f7db6-243f-4232-a88a-0cc29c6cca18" name="IFornecedor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e0b94aed-159f-4e73-8f42-dfaf9c10bff4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="feee417e-7f29-4144-9a42-ddfc04cd2bf0" name="Transportadora" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e74ec922-d363-40a7-a3c2-5705d0d0c2ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="467f69a3-5e33-4efc-be34-57c525c77c37" />
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property Id="f96fad46-e395-4d65-a60f-c36125443565" name="NumeroTelefone" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8d3bee63-858f-4c93-a444-fae3741378eb" />
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="78c495a5-d100-4e5b-9a6d-5c712df4182a" name="RecebePedido" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eb08214f-2267-4e80-8471-1c53dbc339d4" />
+          </operation>
+          <operation Id="e162246a-b0c6-49b3-b9f7-f65b8d2a6a7a" name="EnviarPedidoTransportadora" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cc6826d4-f180-4d1d-b7bb-53e9810ace22" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cabb789f-8a7b-4376-bd85-773f7f410e3d" name="Produto" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="83650251-4630-402e-9dd3-7fadd466e972" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="8ebe5560-c602-4161-a109-d3e2e1ac663f" name="Porto">
+        <elementDefinition Id="5ff0e4b7-6f67-4b6e-a32a-13b77d61f76e" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="2ed90288-8c38-4e39-9df6-699de24cd9a4" name="DespachanteAduaneiro" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b5621c36-778f-4084-bf54-66e1a477449e" />
+              <ownedOperationsInternal>
+                <operation Id="aeb7b1e9-7a66-4cd4-80b4-5058f6252059" name="ComprovaChegadaEncomenda" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <description>Verifica e formaliza a futura entrega de do pedido.</description>
+                  <elementDefinition Id="addfd9cf-9280-4503-b46c-de4e0c1c065c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d59491ae-c245-47f8-be1e-812d041474e8" direction="Return" isUnique="false">
+                        <elementDefinition Id="a19d2b5d-2e6a-4f8e-ad54-5b449d21eaad" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="93659431-ebe5-40c1-9a7e-99578835d0de" LastKnownName="Comprovante" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="4cd50cf6-23d3-40ee-870d-2fc0cc97e9f0" name="ComprovanteValido" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <description>IsValid se é text e 200 Ok</description>
+                  <elementDefinition Id="4de1446b-3ec9-4bd0-9d54-af197b2efc0a" />
+                </operation>
+                <operation Id="66b3aae2-eb35-4765-946b-4af2b3234164" name="DarEntradaEncomenda" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <description>Get / http/1.1</description>
+                  <elementDefinition Id="0272b96a-7dcb-4584-ab03-03da7fc96400" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="c3793f6a-ba97-4bb4-8908-0d503afd0cab" name="AgenteOperador" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e4f39959-c313-407e-b339-9fa0e6bbbaf5" />
+              <ownedOperationsInternal>
+                <operation Id="a0bc1c80-78e4-40d9-83cb-7c335a2d52d6" name="DescarregaContainer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="fcfe073a-d2dc-4d99-95ef-8ed637ede6e2" />
+                </operation>
+                <operation Id="e4fb87e6-fded-4f02-b5de-ae92dcf8f390" name="CarregarContainer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5bce593c-7e6b-4645-9107-f229bea881a1" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="7a744e08-f539-4d60-bcc3-f6d23c4667b2" name="Agencia" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9a18c51e-a246-41ff-86c6-e36a8b6a07ee" />
+              <suppliersInternal>
+                <interfaceRealization Id="edcb8a2b-f762-467a-b834-e4b58c942921">
+                  <interfaceMoniker Id="3dd505e9-9324-44fe-ba8b-80252a08e9e5" LastKnownName="ITransportadora" />
+                  <elementDefinition Id="08eae7b0-0800-4488-aa26-b395847a3d22" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="8373962b-5c77-4dc8-9835-8df60295179a" name="ProcessarEncomenda" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="03a5e73d-cbb1-4f8c-ab21-46ffb3368952" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b272f9f7-71fa-4519-90dd-ee229a567899" name="ContrabandeadorManipulador" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="01da7b45-6050-4271-8629-8dfa9613affe" />
+              <suppliersInternal>
+                <interfaceRealization Id="f2f86173-79ae-496a-a30f-82b036dc14de">
+                  <interfaceMoniker Id="e0f6fe55-8e0b-4501-8fa2-b990d86dfa7b" LastKnownName="IComprador" />
+                  <elementDefinition Id="cc1eea5b-7ec6-4837-ad94-0a96c3603235" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedAttributesInternal>
+                <property Id="503d3a2d-7cf8-4b97-878e-48774ad8e3ea" name="Chegado" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a3d07b1c-790d-413a-8ded-04988caadaa6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="92aad972-9858-45a5-8d18-db12190f1388" LastKnownName="Contrabandeador" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="a6609166-cc34-4376-8ee3-106db7741bce" name="ManipularPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6af46d9b-700a-41a9-b4fd-502c98551f2a" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1cd7087f-9552-44a3-ae64-ef1b31571a20" name="pedido" direction="In" isUnique="false">
+                        <elementDefinition Id="d9d9477a-8fde-45ca-9b53-394e732bdc6b" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d3c81d4d-aa80-456b-a135-c8156e46cc2e" LastKnownName="String" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="811640c9-cd1d-4c26-be92-44eba05b8b3f" name="LigarParaChegado" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="67419356-6213-4881-aecb-ff0e9fe34c0d" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d192f32f-d997-4436-8f9d-646d01e8e269" name="Contrabandeador" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="22678cca-a346-4527-9b2e-e602475cb035" />
+              <suppliersInternal>
+                <interfaceRealization Id="e1446852-8892-41de-8819-d0bc0f3ae463">
+                  <interfaceMoniker Id="725e5e81-2a03-4721-bdde-def432d63a76" LastKnownName="IFornecedor" />
+                  <elementDefinition Id="0a8213da-93bc-4fab-b981-48713295cb40" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="c130d88f-727e-4c9e-b83e-16432d52dae0" isSubstitutable="false">
+                  <classMoniker Id="b272f9f7-71fa-4519-90dd-ee229a567899" LastKnownName="ContrabandeadorManipulador" />
+                  <elementDefinition Id="3845fefb-6b46-46d8-a369-ac4b5bef660c" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="05bb43cd-1981-4386-b6f0-b2c37564152c" name="RecebePedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="39f4ed2f-3f4a-4ed0-b69c-a9bcf880763c" />
+                </operation>
+                <operation Id="689b91ee-f93a-48b4-8d6a-febecf512069" name="EnviarPedidoTransportadora" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bfc7494a-40c5-4eab-82fc-786891708822" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d813f498-6ded-49d2-abc4-593b5e2846b1" name="Navio" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4cc2d4e1-dcda-4e61-b3a3-5331c6fd9ead" />
+              <ownedOperationsInternal>
+                <operation Id="a19e4c1c-f5ed-492e-8efc-9be85dc15ff5" name="EnviaPedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9cdfe97b-7c34-421d-a660-d456601b84b0" />
+                </operation>
+                <operation Id="a75e5837-1509-40c0-9cc1-627ba18536e3" name="TrazProduto" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7b183965-04d4-4331-a4f6-18e689c7a800" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="426d3b7e-e64a-4528-9786-1370d7e39e21" name="IFornecedor" isAbstract="false" isLeaf="false" cachedFullName="Modelagem::IFornecedor">
+        <elementDefinition Id="ed1ad7d3-0db3-4f6a-9587-b61e2a63c530" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="92aad972-9858-45a5-8d18-db12190f1388" name="Contrabandeador" isAbstract="false" isLeaf="false" cachedFullName="Modelagem::Porto::Contrabandeador">
+        <elementDefinition Id="22678cca-a346-4527-9b2e-e602475cb035" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d3c81d4d-aa80-456b-a135-c8156e46cc2e" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="e0f6fe55-8e0b-4501-8fa2-b990d86dfa7b" name="IComprador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16ab8c6a-5006-4eb6-a550-adce8d0cba41" />
+        <ownedAttributes>
+          <property Id="4a4b40c5-0f00-40b1-a2cf-8e5e9cf1e2cd" name="Dinheiro" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="12543b5f-837b-4208-b78d-c9f9794040b3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ca9ceb83-3491-425e-bd88-09c5ee1be485" LastKnownName="decimal" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="ca9ceb83-3491-425e-bd88-09c5ee1be485" name="decimal" isAbstract="false" isLeaf="false" cachedFullName="decimal">
+        <elementDefinition Id="62fa1588-895a-4322-bfaf-89d9b1cc2cfa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="3dd505e9-9324-44fe-ba8b-80252a08e9e5" name="ITransportadora" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f53ae1a-b084-46ff-8599-69183aabae6f" />
+        <ownedOperations>
+          <operation Id="a3c4616a-dd48-48fd-b231-472d30dea9c8" name="ProcessarEncomenda" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6474de15-b763-428d-9915-2e6122ae7d89" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f6650c71-bd37-44c6-875d-8ad20243839b" name="Fabricante" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3494f580-2976-4e15-a1ae-c2b9ad8baff4" />
+        <suppliersInternal>
+          <interfaceRealization Id="108fed35-abea-4d98-94fe-57a15b811089">
+            <interfaceMoniker Id="725e5e81-2a03-4721-bdde-def432d63a76" LastKnownName="IFornecedor" />
+            <elementDefinition Id="06837bdd-3d41-4cbf-b037-993e057e3660" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="6e25a547-82ce-4d61-bf1f-693a03aff4d3" name="RecebePedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="213c26c9-426a-4947-a971-d3ba27403466" />
+          </operation>
+          <operation Id="4ea94da0-62e0-4901-902d-1bd9fe85ae9f" name="EnviarPedidoTransportadora" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8e8964e1-3353-4818-b7b4-0fe73aa6230a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f0882f5a-06a1-428c-a230-8d4da0038614" name="Distribuidora" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="53fe19b5-bb8c-4b0c-aa0f-1f0ba76dbad9" />
+        <suppliersInternal>
+          <interfaceRealization Id="ea40254d-b40b-461b-aced-8578fefbbf9b">
+            <interfaceMoniker Id="725e5e81-2a03-4721-bdde-def432d63a76" LastKnownName="IFornecedor" />
+            <elementDefinition Id="5d907269-1d99-4c08-9485-2e457fefef1f" />
+          </interfaceRealization>
+          <interfaceRealization Id="a633f1fb-5c17-46a5-9c46-e4815385d30b">
+            <interfaceMoniker Id="e0f6fe55-8e0b-4501-8fa2-b990d86dfa7b" LastKnownName="IComprador" />
+            <elementDefinition Id="a1876a2f-22c1-4797-862c-006a4b08b4e3" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="41b03f7c-fddd-4d22-98f9-5701ba34c757" name="RecebePedido" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c44d6ac8-fc8d-47e3-a68d-91fb0863443b" />
+          </operation>
+          <operation Id="56b53127-ae83-41b4-a8fa-6ab44df34bd1" name="EnviarPedidoTransportadora" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="359d7904-5958-486d-9950-169272c85b07" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="258e7c3f-3a02-489d-bf93-3e5b927bc3cf" name="Comprovante:Dictionary&lt;string, string&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="86707569-e131-4bbe-b050-94680e88b41d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="93659431-ebe5-40c1-9a7e-99578835d0de" name="Comprovante" isAbstract="false" isLeaf="false" cachedFullName="Comprovante">
+        <elementDefinition Id="43607b70-dc1e-48f4-b892-81e26336da7a" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="a6b1878f-a1a3-4a51-b198-4595683f78fa" name="Modelagem">
+    <elementDefinition Id="8f50239f-ebd6-40e7-9ffe-c14df2606daf" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0ab74c92-6f9f-4163-aa9d-92122710d0ac">
+        <profileInstance Id="9a3f61d5-be73-45c7-80ef-f5ae244a84ea" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c7620ca4-5761-400f-be5d-e66b9e21bc84">
+        <profileInstance Id="6f750ed0-84b4-431a-a075-0d0a256b590d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="cdd363d2-d81a-49dd-b80f-84f4103a7546">
+        <profileInstance Id="b13d46ad-e37d-4b88-87f4-2db308b6edda" name="CSharpProfile">
+          <elementDefinition Id="2c7e7772-caf1-49ba-b18d-6e31cc6f2eed" />
+        </profileInstance>
+        <elementDefinition Id="154aa347-5b75-4764-97bb-7d532e5c660f" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c46af4e4-9197-44ce-b35d-91867bc0b4d2">
+        <profileInstance Id="1e1f75cc-f8d8-4d9a-9e9b-cb6cbbc9106d" name="TextTemplateBindings">
+          <elementDefinition Id="a41d84da-adc4-456b-b106-dd16a1f45cbc" />
+        </profileInstance>
+        <elementDefinition Id="1e73ed7e-7dad-4988-9867-df283dbfb7a5" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

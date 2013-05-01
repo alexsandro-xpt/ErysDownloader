@@ -1,0 +1,8 @@
+﻿#Links:
+#http://docs.nuget.org/docs/creating-packages/creating-and-publishing-a-package
+#http://www.hanselman.com/blog/CreatingANuGetPackageIn7EasyStepsPlusUsingNuGetToIntegrateASPNETMVC3IntoExistingWebFormsApplications.aspx
+
+
+#Execute a seguinte linha para criar o pacote:
+
+NuGet.exe pack -Prop Configuration=Release

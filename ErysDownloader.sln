@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErysDownloader", "LeibnitzDownloader\ErysDownloader.csproj", "{DE6E716F-22CE-4B00-9EB9-F53AB98B45F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErysDownloader.Test", "LeibnitzDownloader.Test\ErysDownloader.Test.csproj", "{9B2C1A07-73F7-446C-A959-A3F16E69BF99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3F434035-0813-44C6-9413-3AF621B449F4}"
+	ProjectSection(SolutionItems) = preProject
+		ErysDownloader.vsmdi = ErysDownloader.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{C63E59EA-AAF0-4611-9420-BD3B252E2B61}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Modelagem", "Modelagem\Modelagem.modelproj", "{829E8F45-4A77-4BA0-935D-255AA6A87A13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteHttp", "TesteHttp\TesteHttp.csproj", "{1A373269-BD8D-49AA-84E6-89F746661F36}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://swansea:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LeibnitzDownloader\\ErysDownloader.csproj
+		SccProjectName1 = LeibnitzDownloader
+		SccLocalPath1 = LeibnitzDownloader
+		SccProjectUniqueName2 = LeibnitzDownloader.Test\\ErysDownloader.Test.csproj
+		SccProjectName2 = LeibnitzDownloader.Test
+		SccLocalPath2 = LeibnitzDownloader.Test
+		SccProjectUniqueName3 = Modelagem\\Modelagem.modelproj
+		SccProjectName3 = Modelagem
+		SccLocalPath3 = Modelagem
+		SccProjectUniqueName4 = TesteHttp\\TesteHttp.csproj
+		SccProjectName4 = TesteHttp
+		SccLocalPath4 = TesteHttp
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ErysDownloader.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE6E716F-22CE-4B00-9EB9-F53AB98B45F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6E716F-22CE-4B00-9EB9-F53AB98B45F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6E716F-22CE-4B00-9EB9-F53AB98B45F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6E716F-22CE-4B00-9EB9-F53AB98B45F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2C1A07-73F7-446C-A959-A3F16E69BF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2C1A07-73F7-446C-A959-A3F16E69BF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2C1A07-73F7-446C-A959-A3F16E69BF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2C1A07-73F7-446C-A959-A3F16E69BF99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829E8F45-4A77-4BA0-935D-255AA6A87A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829E8F45-4A77-4BA0-935D-255AA6A87A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829E8F45-4A77-4BA0-935D-255AA6A87A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829E8F45-4A77-4BA0-935D-255AA6A87A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A373269-BD8D-49AA-84E6-89F746661F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A373269-BD8D-49AA-84E6-89F746661F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A373269-BD8D-49AA-84E6-89F746661F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A373269-BD8D-49AA-84E6-89F746661F36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
