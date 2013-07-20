@@ -47,9 +47,7 @@ namespace ErysDownloader
 
             IEnumerable<string> requestTunnelWebServer = new[]
                 {
-                    //string.Format("CONNECT http://www.uol.com.br:80/ HTTP/1.1")
                     string.Format("CONNECT {0} HTTP/1.1", string.Format("{0}:{1}", ip, request.Url.Port))
-                    //, string.Format("Host: {0}:80", string.Format("{0}", request.Url.Host))
                     , string.Format("Host: {0}", string.Format("{0}:{1}", ip, request.Url.Port))
                     , "Proxy-Connection: Keep-Alive"
                     , string.Format("User-Agent: {0}", request.RequestHeader["User-Agent"])

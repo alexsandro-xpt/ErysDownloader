@@ -92,10 +92,10 @@ namespace ErysDownloader.Test {
         /// Transferencia de conteudo com Transfer-Encoding: Chunked usando DEFLATE deve funcionar
         ///</summary>
         [TestMethod]
-        public void seraqueganho_te_chunked_deflate_keep_alive_return_html() {
-            var uri = new Uri("http://seraqueganho.com.br/");
+        public void seraqueganho_te_chunked_gzip_return_html() {
+            var uri = new Uri("https://gist.github.com");
             var target = new SocketDownloader();
-            IEnumerable<string> request = new[] {"Connection: Keep-Alive", "Accept-Encoding: deflate"};
+            IEnumerable<string> request = new[] {"Connection: Keep-Alive", "Accept-Encoding: gzip"};
             const string expected = "/html";
             var actual = target.Execute(uri, request);
             foreach (var cabecalho in actual.Headers)
@@ -106,8 +106,7 @@ namespace ErysDownloader.Test {
             Console.WriteLine(actual.Content);
             Assert.IsTrue(actual.Content.Contains(expected));
             Assert.IsTrue(actual.Headers.ContainsValue("chunked") || actual.Headers.ContainsValue("Chunked"), "Não obteve chunked.");
-            Assert.IsTrue(actual.Headers.ContainsValue("deflate") || actual.Headers.ContainsValue("Deflate"), "Não obteve deflate.");
-            Assert.IsTrue(actual.Headers.ContainsValue("keep-alive") || actual.Headers.ContainsValue("Keep-Alive"), "Não obteve keep-alive.");
+            Assert.IsTrue(actual.Headers.ContainsValue("gzip") || actual.Headers.ContainsValue("gzip"), "Não obteve gzip.");
         }
 
         /// <summary>
@@ -128,14 +127,13 @@ namespace ErysDownloader.Test {
             Console.WriteLine(actual.Content);
             Assert.IsTrue(actual.Content.Contains(expected));
             Assert.IsTrue(actual.Headers.ContainsValue("keep-alive") || actual.Headers.ContainsValue("Keep-Alive"), "Não obteve keep-alive.");
-            //Assert.IsTrue(actual.Headers.ContainsValue("deflate") || actual.Headers.ContainsValue("Deflate"), "Não obteve deflate.");
         }
 
         [TestMethod]
         public void theopenalgorithm_gzip_keep_alive_return_html() {
             var uri = new Uri("http://www.theopenalgorithm.com/");
             var target = new SocketDownloader();
-            IEnumerable<string> request = new[] {"Connection: Keep-Alive", "Accept-Encoding: gzip, deflate"};
+            IEnumerable<string> request = new[] { "Connection: Keep-Alive", "Accept-Encoding: gzip, deflate" };
             const string expected = "/html";
             var actual = target.Execute(uri, request);
             foreach (var cabecalho in actual.Headers)
@@ -146,7 +144,6 @@ namespace ErysDownloader.Test {
             Console.WriteLine(actual.Content);
             Assert.IsTrue(actual.Content.Contains(expected));
             Assert.IsTrue(actual.Headers.ContainsValue("keep-alive") || actual.Headers.ContainsValue("Keep-Alive"), "Não obteve keep-alive.");
-            //Assert.IsTrue(actual.Headers.ContainsValue("gzip") || actual.Headers.ContainsValue("Gzip"), "Não obteve gzip.");
         }
 
         /// <summary>
@@ -156,7 +153,6 @@ namespace ErysDownloader.Test {
         public void given_https_site_with_htts_proxy_request_gzip_keep_alive_return_html() {
             var uri = new Uri("https://gist.github.com/");
             var target = new SocketDownloader(new Tunnel() { Host = "187.72.145.54", Port = 8080 });
-            //target.Proxy = new ProxyServer { Uri = "https://187.72.145.54:8080" };
             IEnumerable<string> request = new[] {"Connection: Keep-Alive", "Accept-Encoding: gzip, deflate"};
             const string expected = "/html";
             var actual = target.Execute(uri, request);
@@ -179,7 +175,7 @@ namespace ErysDownloader.Test {
         {
             var uri = new Uri("http://meuip.datahouse.com.br/");
             var target = new SocketDownloader(new Tunnel() { Host = "187.72.145.54", Port = 8080 });
-            //target.Proxy = new ProxyServer { Uri = "https://187.72.145.54:8080" };
+
             IEnumerable<string> request = new[] { "Connection: Keep-Alive", "Accept-Encoding: gzip, deflate" };
             const string expected = "/html";
             var actual = target.Execute(uri, request);
@@ -196,29 +192,29 @@ namespace ErysDownloader.Test {
         [TestMethod]
         public void given_webclient_class_response_should_return_same_html()
         {
-            //var _uri = new Uri("http://www.google.com.br/search?&tbm=shop&q=zoom g2 1nu");
-            //var target = new SocketDownloader();
-            //IEnumerable<string> request = new[] { "Connection: Keep-Alive" };
+            var _uri = new Uri("http://info.cern.ch/hypertext/WWW/TheProject.html");
+            var target = new SocketDownloader();
+            IEnumerable<string> request = new[] { "Connection: Keep-Alive" };
 
-            //var expected = "";
+            var expected = "";
 
-            //using(var wc = new WebClient())
-            //{
-            //    expected = wc.DownloadString(_uri);
-            //}
+            using (var wc = new WebClient())
+            {
+                expected = wc.DownloadString(_uri);
+            }
 
-            //target.UserAgent = string.Empty;
+            target.UserAgent = string.Empty;
 
-            //var actual = target.Execute(_uri, request);
+            var actual = target.Execute(_uri, request);
 
 
-            //Assert.AreEqual(expected.Length, actual.Content.Length, "O conteudo transferido não é o mesmo.");
+            Assert.AreEqual(expected.Length, actual.Content.Length, "O conteudo transferido não é o mesmo.");
         }
 
         [TestMethod]
         public void given_iso_output_charset_should_have_char()
         {
-            var _uri = new Uri("http://www.google.com.br/search?&tbm=shop&q=zoom g2 1nu");
+            var _uri = new Uri("http://pt.wikipedia.org/wiki/DevOps");
             var target = new SocketDownloader();
             IEnumerable<string> request = new[] { "Connection: Keep-Alive" };
 
@@ -235,16 +231,7 @@ namespace ErysDownloader.Test {
                 Console.WriteLine(header);
             }
 
-            //var buffer = Encoding.ASCII.GetBytes(html);
-            //var msg = Encoding.UTF8.GetString(buffer);
-
-            //Encoding iso = Encoding.Default;// Encoding.GetEncoding("ISO-8859-1");
-            //Encoding utf8 = Encoding.GetEncoding("ISO-8859-1");// new UTF8Encoding();// Encoding.UTF8;
-            //byte[] utfBytes = iso.GetBytes(html);
-            //byte[] isoBytes = Encoding.Convert(iso, utf8, utfBytes);
-            //string msg = iso.GetString(isoBytes);
-
-            var msg = html;// Encoding.UTF8.GetString(isoBytes);
+            var msg = html;
 
             Console.WriteLine(msg);
 
@@ -269,14 +256,12 @@ namespace ErysDownloader.Test {
             Console.WriteLine(actual.Content);
             Assert.IsTrue(actual.Content.Contains(expected));
             Assert.IsTrue(actual.Headers.ContainsValue("keep-alive") || actual.Headers.ContainsValue("Keep-Alive"), "Não obteve keep-alive.");
-            Assert.IsTrue(actual.Headers.ContainsValue("gzip") || actual.Headers.ContainsValue("Gzip"), "Não obteve gzip.");
         }
 
         [TestCategory("Chain"), TestCategory("Proxy"), TestMethod, Timeout(10 * 60 * 1000)]
         public void chain_proxy_request_return_html() {
             var uri = new Uri("http://meuip.datahouse.com.br/");
             var target = new SocketDownloader(new Tunnel(new Tunnel() { Host = "187.72.145.54", Port = 8080 }) { Host = "82.99.209.34", Port = 80 });
-            //target.Proxy = new ProxyServer(new ProxyServer { Uri = "https://187.72.145.54:8080" }) { Uri = "https://152.92.137.2:3128" };
             IEnumerable<string> request = new[] {"Connection: Keep-Alive", "Accept-Encoding: gzip, deflate"};
             const string expected = "/html";
             var actual = target.Execute(uri, request);
@@ -315,36 +300,36 @@ namespace ErysDownloader.Test {
         [TestMethod]
         public void keep_alive_request_should_persist_connection_return_html2()
         {
-            var uri = new Uri("http://localhost/teste.html");
-            var target = new SocketDownloader();
-            IEnumerable<string> request = new[] { "Connection: Keep-Alive", "Accept-Encoding: gzip, deflate" };
-            const string expected = "/html";
-            var actual = target.Execute(uri, request);
-            Assert.IsTrue(actual.Content.Contains(expected));
+            //var uri = new Uri("http://localhost/teste.html");
+            //var target = new SocketDownloader();
+            //IEnumerable<string> request = new[] { "Connection: Keep-Alive", "Accept-Encoding: gzip, deflate" };
+            //const string expected = "/html";
+            //var actual = target.Execute(uri, request);
+            //Assert.IsTrue(actual.Content.Contains(expected));
 
-            foreach (var cabecalho in actual.Headers) {
-                Debug.WriteLine(cabecalho);
-            }
+            //foreach (var cabecalho in actual.Headers) {
+            //    Debug.WriteLine(cabecalho);
+            //}
 
-            foreach (var url in (new[]
-                                        {
-                                            "http://localhost/teste2.php"
-                                            , "http://localhost/teste3.html"
-                                            , "http://localhost/brModelo.exe" // Arquivo binario no meio da lista não pode persistir uma conexão. Por que tem que descontar da stream e pular todo o arquivo para prosseguir em outra stream.
-                                            //Falta teste pra isto.
+            //foreach (var url in (new[]
+            //                            {
+            //                                "http://localhost/teste2.php"
+            //                                , "http://localhost/teste3.html"
+            //                                , "http://localhost/brModelo.exe" // Arquivo binario no meio da lista não pode persistir uma conexão. Por que tem que descontar da stream e pular todo o arquivo para prosseguir em outra stream.
+            //                                //Falta teste pra isto.
                                             
-                                        })) {
-                actual = target.Execute(new Uri(url), request/*, actual.Server*/);
+            //                            })) {
+            //    actual = target.Execute(new Uri(url), request/*, actual.Server*/);
 
-                Debug.WriteLine("\r\n----------");
-                foreach (var cabecalho in actual.Headers)
-                {
-                    Debug.WriteLine(cabecalho);
-                }
+            //    Debug.WriteLine("\r\n----------");
+            //    foreach (var cabecalho in actual.Headers)
+            //    {
+            //        Debug.WriteLine(cabecalho);
+            //    }
 
-                int status;
-                Assert.IsTrue(Int32.TryParse(actual.Headers["status"], out status));
-            }
+            //    int status;
+            //    Assert.IsTrue(Int32.TryParse(actual.Headers["status"], out status));
+            //}
         }
     }
 }

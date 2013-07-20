@@ -18,22 +18,9 @@ namespace ErysDownloader
         public virtual Response SendRequest(Request request)
         {
 
-            //IEnumerable<string> requestProxy = new[]
-            //    {
-            //        string.Format("GET {0} HTTP/1.1", string.Format("{0}:{1}", request.Url, request.Url.Port))
-            //        , string.Format("Host: {0}", string.Format("{0}:{1}", request.Url, request.Url.Port))
-            //        , "Proxy-Connection: Keep-Alive"
-            //        , request.RequestHeader["User-Agent"]
-            //    };
-
             if (this.Credencial != null)
             {
                 request.RequestHeader["Proxy-Authorization"] = "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", Credencial.UserName, Credencial.Password)));
-                //requestProxy = requestProxy.Concat(new[]
-                //    {
-                //        "Proxy-Authorization: Basic " +
-                //        Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", Credencial.UserName, Credencial.Password)))
-                //    });
             }
 
             request.RequestHeader["Proxy-Connection"] = "Keep-Alive";

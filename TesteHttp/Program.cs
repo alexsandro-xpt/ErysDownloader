@@ -110,7 +110,6 @@ namespace TesteHttp
 
             var uri = new Uri("http://www.tecmundo.com.br/");
             //var uri = new Uri("http://meuip.datahouse.com.br/");
-            //var uri = new Uri("http://www.unilestemg.br/");
             //var uri = new Uri("http://seraqueganho.com.br/");
 
 
