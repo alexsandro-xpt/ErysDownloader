@@ -44,7 +44,7 @@ Usage:
 
 Feature:
 -------------
-* Full HTTP download stack protocol(SSL, chucked content, gzip and deflate)
+* Full HTTP GET verb stack protocol (SSL, chucked content, gzip and deflate)
 * Direct Connection
 * Classic Proxy
 * Tunnel Proxy
