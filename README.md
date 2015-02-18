@@ -59,3 +59,4 @@ To do:
 * HEAD Verb before GET to persist tcp connection
 * SOCKS 4 Proxy
 * SOCKS 5 Proxy
+* HTTP 2.0 implementation
